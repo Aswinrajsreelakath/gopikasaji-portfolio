@@ -1,6 +1,6 @@
 /* Hero Section */
 .hero-section {
-  height: 100vh;
+  height: 100vh; /* full height on desktop */
   padding-top: 5rem;
   display: flex;
   align-items: center;
@@ -28,13 +28,18 @@
   margin-bottom: 1.5rem;
 }
 
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
 .hero-buttons .btn-primary {
   background: white;
   color: #6366f1;
   padding: 0.75rem 1.5rem;
   border-radius: 9999px;
   font-weight: 500;
-  margin-right: 0.5rem;
   text-decoration: none;
   transition: background 0.3s;
 }
@@ -62,7 +67,7 @@
 .hero-image {
   display: flex;
   justify-content: center;
-  transform: translateX(2rem); /* move slightly right */
+  transform: translateX(2rem);
 }
 
 .image-ring {
@@ -120,18 +125,91 @@
 
 .skill-card:hover {
   transform: translateY(-5px) scale(1.05);
-  box-shadow: 0 15px 25px rgba(99, 102, 241, 0.3); /* Indigo glow effect */
+  box-shadow: 0 15px 25px rgba(99, 102, 241, 0.3);
 }
+
 /* Larger Screens (tablet & desktop) */
 @media (min-width: 768px) {
   .hero-container {
-    flex-direction: row; /* side by side */
+    flex-direction: row;
     text-align: left;
     justify-content: space-between;
     align-items: center;
   }
-
   .hero-buttons {
     flex-direction: row;
+  }
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .hero-section {
+    height: auto; /* adjust height */
+    padding: 4rem 2rem;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .hero-image {
+    transform: translateX(0);
+    margin-bottom: 2rem;
+  }
+
+  .image-ring {
+    width: 16rem;
+    height: 16rem;
+  }
+
+  .image-inner img {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .hero-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero-text p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .hero-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .hero-text h2 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .image-ring {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .image-inner img {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .hero-buttons .btn-primary,
+  .hero-buttons .btn-secondary {
+    width: 100%;
+    text-align: center;
   }
 }
