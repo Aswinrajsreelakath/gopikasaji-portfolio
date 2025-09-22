@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gopika Saji - Portfolio</title>
-    <link rel="stylesheet" href="index.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-gray-50 text-gray-800 font-sans">
     <!-- Navbar -->
     <nav class="bg-white shadow-md fixed w-full z-10 top-0">
-      <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <div
+        class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center"
+      >
         <h1 class="text-xl font-bold text-indigo-600">Gopika Saji</h1>
         <div class="space-x-6 hidden md:block">
           <a href="#about" class="hover:text-indigo-600">About</a>
@@ -24,29 +25,68 @@
     </nav>
 
     <!-- Hero -->
-    <section class="hero-section">
-      <div class="hero-container">
+    <section
+      class="h-screen flex items-center justify-center bg-gradient-to-r from-indigo-500 to-purple-600 text-white pt-20"
+    >
+      <div
+        class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center"
+      >
         <!-- Text -->
-        <div class="hero-text">
-          <h2>Graduate Structural Engineer</h2>
-          <p>
+        <div class="text-center md:text-left">
+          <h2 class="text-4xl md:text-5xl font-bold mb-4">
+            Graduate Structural Engineer
+          </h2>
+          <p class="text-lg md:text-xl mb-6">
             MSc Structural Engineer (Distinction) skilled in structural design,
             CAD, 3D modelling, site supervision, and sustainable materials.
             Seeking opportunities in the UK toward Chartered Engineer (CEng)
             status.
           </p>
-          <div class="hero-buttons">
-            <a href="#contact" class="btn-primary">Contact Me</a>
-            <a href="src/Gopika Saji_CV.pdf" download class="btn-secondary">Download CV</a>
+          <div class="space-x-4">
+            <a
+              href="#contact"
+              class="bg-white text-indigo-600 px-6 py-3 rounded-full font-medium hover:bg-gray-100"
+              >Contact Me</a
+            >
+            <a
+              href="Gopika_Saji_CV.pdf"
+              download
+              class="bg-transparent border border-white px-6 py-3 rounded-full font-medium hover:bg-white hover:text-indigo-600"
+              >Download CV</a
+            >
           </div>
         </div>
 
-        <!-- Profile Image -->
-        <div class="hero-image">
-          <div class="image-ring">
-            <div class="image-inner">
-              <img src="src/gopika.png" alt="Gopika Saji" />
-            </div>
+        <!-- Profile Image with Gradient Ring -->
+        <div class="flex justify-center md:justify-end">
+          <div class="relative">
+            <!-- Gradient ring -->
+
+    <!-- Gradient ring -->
+    <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-pink-400 via-indigo-500 to-purple-600 p-2">
+      <div class="w-72 h-72 rounded-full bg-white flex items-center justify-center shadow-xl transition-transform transform hover:scale-105">
+        <img
+          src="https://drive.google.com/file/d/1UVI_AMIhE7ERXSGTnkzd37NaEh5t39Wr/view?usp=sharing"
+          alt="Gopika Saji"
+          class="w-68 h-68 rounded-full object-cover shadow-lg"
+        />
+      </div>
+    </div>
+
+
+            <!-- <div
+              class="absolute inset-0 rounded-full bg-gradient-to-tr from-pink-400 via-indigo-500 to-purple-600 p-1"
+            >
+              <div
+                class="w-64 h-64 rounded-full bg-white flex items-center justify-center"
+              >
+                <img
+                  src="https://drive.google.com/file/d/1UVI_AMIhE7ERXSGTnkzd37NaEh5t39Wr/view?usp=sharing"
+                  alt="Gopika Saji"
+                  class="w-60 h-60 rounded-full object-cover shadow-lg"
+                />
+              </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -72,18 +112,18 @@
         <div
           class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-center"
         >
-          <div class="skill-card">AutoCAD</div>
-          <div class="skill-card">Revit</div>
-          <div class="skill-card">Tekla</div>
-          <div class="skill-card">STAAD Pro</div>
-          <div class="skill-card">ETABS</div>
-          <div class="skill-card">SketchUp</div>
-          <div class="skill-card">Eurocodes EC2 & EC3</div>
-          <div class="skill-card">Project Management</div>
-          <div class="skill-card">BIM Workflows</div>
-          <div class="skill-card">Site Supervision</div>
-          <div class="skill-card">Risk Assessment</div>
-          <div class="skill-card">Technical Reporting</div>
+          <div class="p-4 bg-white rounded-lg shadow">AutoCAD</div>
+          <div class="p-4 bg-white rounded-lg shadow">Revit</div>
+          <div class="p-4 bg-white rounded-lg shadow">Tekla</div>
+          <div class="p-4 bg-white rounded-lg shadow">STAAD Pro</div>
+          <div class="p-4 bg-white rounded-lg shadow">ETABS</div>
+          <div class="p-4 bg-white rounded-lg shadow">SketchUp</div>
+          <div class="p-4 bg-white rounded-lg shadow">Eurocodes EC2 & EC3</div>
+          <div class="p-4 bg-white rounded-lg shadow">Project Management</div>
+          <div class="p-4 bg-white rounded-lg shadow">BIM Workflows</div>
+          <div class="p-4 bg-white rounded-lg shadow">Site Supervision</div>
+          <div class="p-4 bg-white rounded-lg shadow">Risk Assessment</div>
+          <div class="p-4 bg-white rounded-lg shadow">Technical Reporting</div>
         </div>
       </div>
     </section>
@@ -239,7 +279,7 @@
           >
         </p>
         <a
-          href="src/Gopika Saji_CV.pdf"
+          href="Gopika_Saji_CV.pdf"
           download
           class="inline-block mt-6 bg-white text-indigo-600 px-6 py-3 rounded-full font-medium hover:bg-gray-100"
           >Download CV</a
@@ -252,13 +292,14 @@
       © 2025 Gopika Saji. All rights reserved.
     </footer>
 
-
     <!-- Smooth scroll -->
     <script>
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
           e.preventDefault();
-          document.querySelector(this.getAttribute("href")).scrollIntoView({ behavior: "smooth" });
+          document
+            .querySelector(this.getAttribute("href"))
+            .scrollIntoView({ behavior: "smooth" });
         });
       });
     </script>
