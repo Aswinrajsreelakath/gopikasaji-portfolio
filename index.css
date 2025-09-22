@@ -108,7 +108,6 @@
   transform: scale(1.05);
 }
 
-
 .skill-card {
   background: white;
   padding: 1rem;
@@ -123,4 +122,16 @@
   transform: translateY(-5px) scale(1.05);
   box-shadow: 0 15px 25px rgba(99, 102, 241, 0.3); /* Indigo glow effect */
 }
+/* Larger Screens (tablet & desktop) */
+@media (min-width: 768px) {
+  .hero-container {
+    flex-direction: row; /* side by side */
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+  }
 
+  .hero-buttons {
+    flex-direction: row;
+  }
+}
